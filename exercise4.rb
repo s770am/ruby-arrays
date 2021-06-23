@@ -28,6 +28,36 @@ def call_absent_dogs(array)
     puts "--------------------"
 end
 
+def chase_squirrel(array) 
+    puts "a squirrel has appeared!"
+ array.map! do |dog|
+dog[:position] += 5
+dog
+ end
+end
+
+def return_dogs(array)
+    puts "the dogs have returned"
+    array.map! do |dog|
+        dog[:position] = 0
+        dog
+    end
+end
+
+def tester (array)
+p array
+end
+
 call_absent_dogs(my_dogs)
 
-call_absent_dogs(my_neibors_dogs)
+# call_absent_dogs(my_neibors_dogs)
+
+chase_squirrel(my_dogs)
+
+
+ call_absent_dogs(my_dogs)
+
+return_dogs(my_dogs)
+
+call_absent_dogs(my_dogs)
+
