@@ -1,7 +1,9 @@
 grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 
 def list_printer (array)
-    puts array.join("\n*")
+  array.each do |item|
+puts "*" + item
+  end
     puts "---------------------------"
 end
 
